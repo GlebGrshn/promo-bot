@@ -1,0 +1,8 @@
+# Зависимости для деплоя ТОЛЬКО МАКС (без aiogram/vkbottle).
+maxapi>=1.2
+SQLAlchemy>=2.0,<3
+APScheduler>=3.10,<4
+openpyxl>=3.1
+python-dotenv>=1.0
+aiohttp>=3.9
+tzdata>=2024.1

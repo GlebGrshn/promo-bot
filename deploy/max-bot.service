@@ -1,0 +1,16 @@
+[Unit]
+Description=MAX raffle bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=maxbot
+WorkingDirectory=/opt/max-bot
+ExecStart=/opt/max-bot/.venv/bin/python run_max.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

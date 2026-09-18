@@ -1,0 +1,10 @@
+services:
+  max-bot:
+    build: .
+    container_name: max-bot
+    restart: unless-stopped
+    env_file: .env          # токены и настройки берутся из .env (в образ НЕ попадают)
+    environment:
+      - TZ=Europe/Moscow
+    volumes:
+      - ./data:/app/data    # база и фото чеков сохраняются на хосте

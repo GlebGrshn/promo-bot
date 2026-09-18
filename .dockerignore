@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.git/
+data/
+_selftest.py
+*.md
+.env.example
